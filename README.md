@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# 🍔 GoFood – MERN Stack Food Ordering App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GoFood is a **MERN stack food ordering web application** built using **React, Node.js, Express, and MongoDB**.  
+This project focuses on core food-ordering functionality such as user authentication, browsing food items, cart management, and order history.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+### Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js (Create React App)
+- React Router DOM
+- Bootstrap & React-Bootstrap
+- Context API for state management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
 
-### `npm test`
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- JWT Authentication
+- bcrypt.js for password hashing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+vedantrajhans-gofood/
+├── backend/
+│ ├── index.js
+│ ├── package.json
+│ ├── middleware/
+│ │ └── fetchdetails.js
+│ ├── models/
+│ │ ├── User.js
+│ │ └── Orders.js
+│ └── Routes/
+│ ├── Auth.js
+│ ├── CreatUser.js
+│ └── DisplayData.js
+│
+├── public/
+│ ├── index.html
+│ ├── manifest.json
+│ └── robots.txt
+│
+├── src/
+│ ├── components/
+│ │ ├── Navbar.js
+│ │ ├── Footer.js
+│ │ ├── Card.js
+│ │ ├── Carousal.js
+│ │ └── ContextReducer.js
+│ ├── screens/
+│ │ ├── Home.js
+│ │ ├── Login.js
+│ │ ├── Signup.js
+│ │ ├── Cart.js
+│ │ └── MyOrder.js
+│ ├── App.js
+│ ├── index.js
+│ └── App.css
+│
+├── package.json
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yaml
+Copy code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ✨ Features Implemented
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- User Signup & Login (JWT based authentication)
+- Food item listing from database
+- Add to cart functionality
+- Order placement
+- Order history page
+- Reusable UI components
+- Context API for global cart state
+- Backend REST APIs using Express
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ How to Run the Project Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+1️⃣ Clone the Repository
 
-## Learn More
+git clone https://github.com/Vedantrajhans/vedantrajhans-gofood.git
+cd vedantrajhans-gofood
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2️⃣ Install Frontend Dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3️⃣ Install Backend Dependencies
+cd backend
+npm install
 
-### Code Splitting
+4️⃣ Start the Backend Server
+nodemon index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend will run on:
+http://localhost:5000
 
-### Analyzing the Bundle Size
+5️⃣ Start the Frontend (New Terminal)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+cd ..
+npm start
+Frontend will run on:
 
-### Making a Progressive Web App
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔐 Environment Setup
+Make sure MongoDB is running locally or update your MongoDB connection string in the backend database config file.
 
-### Advanced Configuration
+Example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+mongodb://127.0.0.1:27017/gofood
 
-### Deployment
+🌱 Future Improvements
+Payment gateway integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Admin dashboard
 
-### `npm run build` fails to minify
+Better UI/UX
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Order status tracking
+
+Deployment on cloud platforms
+
+Better validation & security
+
+👨‍💻 Author
+Vedant Rajhans
+B.Tech CSE | Full-Stack Developer
+
+GitHub: https://github.com/Vedantrajhans
+
+LinkedIn: https://www.linkedin.com/in/vedant-rajhans-0218682b8/
+
+Email: vedant.rajhans23@gmail.com
+
+
+⚠️  This project was developed as a learning project. The main goal was to understand full-stack integration using the MERN stack.
+⭐ If you find this project helpful, consider giving it a star!
+```
